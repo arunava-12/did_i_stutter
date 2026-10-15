@@ -1,0 +1,9 @@
+streamlit>=1.50
+pandas
+numpy
+plotly
+jiwer
+librosa
+soundfile
+
+# python -m streamlit run app.py    
