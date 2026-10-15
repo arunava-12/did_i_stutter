@@ -1,25 +1,91 @@
+# ==============================
 # Python
+# ==============================
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 
-# Virtual environments
+# ==============================
+# Virtual Environments
+# ==============================
 .venv/
 venv/
 env/
+ENV/
 
-# Local data and generated experiment results
-/data/audio/
-/data/transcripts/
-/results/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Streamlit
-.streamlit/secrets.toml
-
-# Environment variables and local overrides
+# ==============================
+# Environment Variables & Secrets
+# ==============================
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
+
+# ==============================
+# IDEs & Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Audio Data
+# ==============================
+# Keep raw audio out of Git by default.
+# Remove this rule if you explicitly want to publish audio.
+/data/audio/
+
+# ==============================
+# Transcripts
+# ==============================
+# Keep transcripts tracked, provided they are safe to publish.
+!/data/transcripts/
+
+# ==============================
+# Experiment Results
+# ==============================
+# Keep CSV metrics, generated TTS audio and model outputs tracked.
+!/results/
+
+# ==============================
+# Temporary & Log Files
+# ==============================
+*.log
+logs/
+tmp/
+temp/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================
+# Model Checkpoints & Large Artifacts
+# ==============================
+# Uncomment these rules if you want to exclude large model files.
+# *.pt
+# *.pth
+# *.ckpt
+# *.h5
+# *.keras
+
+# ==============================
+# OS Files
+# ==============================
+.DS_Store
+Desktop.ini
+Thumbs.db
